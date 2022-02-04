@@ -13,5 +13,5 @@ jobs:
       - run: gem install ffi
       - run: gem uninstall -aIx eventmachine
       - run: gem install eventmachine --platform=ruby
-      - run: cd ruby
+      - run: pwd
       - run: bundle install
