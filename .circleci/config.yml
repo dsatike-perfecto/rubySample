@@ -10,3 +10,8 @@ jobs:
       - ruby/install:
           version: '2.7'
       - run: echo "Ruby 2.7 has been installed"
+      - run: gem install ffi
+      - run: gem uninstall -aIx eventmachine
+      - run: gem install eventmachine --platform=ruby
+      - run: cd ruby
+      - run: bundle install
