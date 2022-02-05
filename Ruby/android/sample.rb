@@ -5,11 +5,11 @@ require 'selenium-webdriver'
 desired_caps = {
         #  1. Replace <<cloud name>> with your perfecto cloud name (e.g. demo is the cloudName of demo.perfectomobile.com).
     appium_lib: {
-        server_url: 'https://%s.perfectomobile.com/nexperience/perfectomobile/wd/hub' % "ps",  
+        server_url: 'https://%s.perfectomobile.com/nexperience/perfectomobile/wd/hub' % "aetnahealth",  
     },
     caps: {
         #  2. Replace <<security token>> with your perfecto security token.
-        securityToken: 'eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyODhhNDIyNS1jOTE1LTQwZDctOTc2YS04MDhiMWE3YTFmODYifQ.eyJpYXQiOjE2Mjk4MzM3NjIsImp0aSI6Ijg2N2I4ODg2LWYyMmMtNGI0YS1iMmRlLWU0MDE2NmU0ZjQwYiIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvcHMtcGVyZmVjdG9tb2JpbGUtY29tIiwiYXVkIjoiaHR0cHM6Ly9hdXRoLnBlcmZlY3RvbW9iaWxlLmNvbS9hdXRoL3JlYWxtcy9wcy1wZXJmZWN0b21vYmlsZS1jb20iLCJzdWIiOiI3YzAyMTU5ZC0zNjNmLTQ2ZDUtYjcyMS1hYjY1MGFlYzQ3ODQiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoib2ZmbGluZS10b2tlbi1nZW5lcmF0b3IiLCJub25jZSI6IjVhZThkYzAwLTIwZTAtNDE3Yi05ZmVmLTBhZTE2Njk0ODkxOSIsInNlc3Npb25fc3RhdGUiOiJhM2FlNzljMS1jNzc0LTQyMDEtYjJmOC00NjFjYTY0ODU2OTAiLCJzY29wZSI6Im9wZW5pZCBvZmZsaW5lX2FjY2VzcyJ9.hrG5FBsxWhI6MKOZNCo9lQs7wyYiQUUW3ZMiDKRA5jM',
+        securityToken: 'eyJhbGciOiJIUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIxYzMyMWM0OS03NjdlLTQ5ZWEtYTA0Yy0zZGY0N2MyOTU4MjcifQ.eyJpYXQiOjE2NDQwMTk4MzUsImp0aSI6ImFjNTBmOGI0LTMzZmEtNDEwNC04MGVkLTU1OTU4YjcxYjM2MiIsImlzcyI6Imh0dHBzOi8vYXV0aC5wZXJmZWN0b21vYmlsZS5jb20vYXV0aC9yZWFsbXMvYWV0bmFoZWFsdGgtcGVyZmVjdG9tb2JpbGUtY29tIiwiYXVkIjoiaHR0cHM6Ly9hdXRoLnBlcmZlY3RvbW9iaWxlLmNvbS9hdXRoL3JlYWxtcy9hZXRuYWhlYWx0aC1wZXJmZWN0b21vYmlsZS1jb20iLCJzdWIiOiI3NDMwMGEzMC0yZDk1LTQwZGYtOGVmZS0xMzNhMGEzZTJkNTQiLCJ0eXAiOiJPZmZsaW5lIiwiYXpwIjoib2ZmbGluZS10b2tlbi1nZW5lcmF0b3IiLCJub25jZSI6ImFkMjc5YTQzLWM4ZWUtNDVlNi04NjcyLWY3OTQ2MjgxZTZiMyIsInNlc3Npb25fc3RhdGUiOiI0NTY2MDA2Zi00NjlmLTRiMDYtYWEwMC1hYTliNWMzNjVhYTgiLCJzY29wZSI6Im9wZW5pZCBvZmZsaW5lX2FjY2VzcyJ9.sdUC9UplEEP12w1D5x9t3MBcqSjgAFDnt_vL0x6piV4',
         
         # 3. Set device capabilities.
         platformName: 'Android',
